@@ -1,0 +1,176 @@
+{
+    "category": "payment",
+    "display": "New payment checkout session with price ids",
+    "fields": {
+        "ABQ": {
+            "caption": "Success URL",
+            "doc": "ex : https://example.com/success",
+            "editor": "DynamicValue",
+            "name": "success_url",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABR": {
+            "caption": "Cancel URL",
+            "doc": "ex :https://example.com/cancel",
+            "editor": "DynamicValue",
+            "name": "cancel_url",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABS": {
+            "caption": "Price IDs",
+            "editor": "DynamicValue",
+            "field_list": true,
+            "field_type_restriction": "text_image_file",
+            "is_list": true,
+            "name": "prices",
+            "rank": 3,
+            "value": "text"
+        },
+        "ABT": {
+            "caption": "Quantities",
+            "editor": "DynamicValue",
+            "field_list": true,
+            "field_type_restriction": "number",
+            "is_list": true,
+            "name": "quantities",
+            "rank": 4,
+            "value": "number"
+        },
+        "ABU": {
+            "caption": "Card payment",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "card_payment",
+            "rank": 6
+        },
+        "ABV": {
+            "caption": "SEPA payment",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "sepa_payment",
+            "rank": 7
+        },
+        "ABW": {
+            "caption": "Tax rates",
+            "editor": "DynamicValue",
+            "field_type_restriction": "text_image_file",
+            "is_list": true,
+            "name": "taxRates",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "ABX": {
+            "caption": "Customer Type",
+            "doc": "Add the customer if already known",
+            "editor": "custom_type",
+            "name": "customer_type",
+            "optional": true,
+            "rank": 8,
+            "value": "custom_data_AAJ"
+        },
+        "ABY": {
+            "caption": "Customer ID",
+            "doc": "Customer ID if already known",
+            "editor": "custom_field_ABX",
+            "field_type_restriction": "text_image_file",
+            "name": "customer_id",
+            "optional": true,
+            "rank": 9
+        },
+        "ABZ": {
+            "caption": "Customer Email",
+            "doc": "Customer email if customer ID is empty",
+            "editor": "custom_field_ABX",
+            "field_type_restriction": "text_image_file",
+            "name": "customer_email",
+            "optional": true,
+            "rank": 10
+        },
+        "ABa": {
+            "caption": "Customer",
+            "editor": "DynamicValue",
+            "name": "customer",
+            "optional": true,
+            "rank": 11,
+            "value": "custom_data_ABX"
+        },
+        "ABb": {
+            "caption": "Names",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "names",
+            "rank": 2,
+            "value": "text"
+        },
+        "ABc": {
+            "caption": "Mode",
+            "default_val": "payment",
+            "editor": "Dropdown",
+            "name": "mode",
+            "options": "payment,subscription",
+            "rank": 12
+        },
+        "ACk": {
+            "caption": "Coupon ID",
+            "doc": "Leave empty if you choose promotion code or nothing",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "coupon_id",
+            "optional": true,
+            "rank": 14,
+            "value": "text"
+        },
+        "ACl": {
+            "caption": "Free Trial Period",
+            "doc": "number of days (usually 7 or 14), leave empty if 0 or if mode is payment ",
+            "editor": "DynamicValue",
+            "name": "free_trial_period",
+            "optional": true,
+            "rank": 16,
+            "value": "number"
+        },
+        "ADD": {
+            "caption": "delivery tax",
+            "editor": "DynamicValue",
+            "name": "delivery_tax",
+            "optional": true,
+            "rank": 17,
+            "value": "text"
+        },
+        "ADE": {
+            "caption": "Promotion code ID",
+            "doc": "Leave empty if you choose coupon or nothing",
+            "editor": "DynamicValue",
+            "name": "promotion_code_id",
+            "optional": true,
+            "rank": 15,
+            "value": "text"
+        },
+        "ADF": {
+            "caption": "add Reduc",
+            "editor": "Dropdown",
+            "name": "add_reduc",
+            "options": "none,coupon,promotion code",
+            "rank": 13
+        }
+    },
+    "return_value": {
+        "AAF": {
+            "caption": "Session ID",
+            "name": "session_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABi": {
+            "caption": "info",
+            "name": "info",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

@@ -1,0 +1,74 @@
+{
+    "category": "payment",
+    "display": "Create a coupon",
+    "fields": {
+        "ACn": {
+            "caption": "type",
+            "default_val": "net reduction",
+            "doc": "Type of reduction",
+            "editor": "Dropdown",
+            "name": "type",
+            "options": "net reduction,percentage",
+            "rank": 0
+        },
+        "ACp": {
+            "caption": "name",
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "name",
+            "rank": 1,
+            "value": "text"
+        },
+        "ACq": {
+            "caption": "value",
+            "doc": "when redu net, in cents (*100 when euro)",
+            "editor": "DynamicValue",
+            "name": "value",
+            "rank": 2,
+            "value": "number"
+        },
+        "ACr": {
+            "caption": "applies_to",
+            "doc": "stripe ID of the products to which the coupon applies",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "applies_to",
+            "rank": 3,
+            "value": "text"
+        },
+        "ACs": {
+            "caption": "quantity",
+            "doc": "leave empty if 0",
+            "editor": "DynamicValue",
+            "name": "quantity",
+            "optional": true,
+            "rank": 4,
+            "value": "number"
+        },
+        "ACt": {
+            "caption": "times redeemed",
+            "doc": "Unix Timestamp of end date of validity",
+            "editor": "DynamicValue",
+            "name": "times_redeemed",
+            "optional": false,
+            "rank": 5,
+            "value": "number"
+        }
+    },
+    "return_value": {
+        "ACu": {
+            "caption": "coupon_id",
+            "name": "coupon_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACv": {
+            "caption": "info",
+            "name": "info",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

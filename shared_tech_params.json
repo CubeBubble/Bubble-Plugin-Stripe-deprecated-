@@ -1,0 +1,12 @@
+{
+    "dependencies": {
+        "plugin_api_version": 2,
+        "use_jquery": true
+    },
+    "shared_keys": {
+        "AAE": {
+            "caption": "Secret Key",
+            "type": "secure"
+        }
+    }
+}

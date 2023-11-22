@@ -1,0 +1,41 @@
+{
+    "category": "payment",
+    "display": "Retrieve a Stripe session",
+    "fields": {
+        "AAc": {
+            "caption": "Session ID",
+            "editor": "DynamicValue",
+            "name": "session_id",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AAF": {
+            "caption": "Paid",
+            "name": "paid",
+            "rank": 0,
+            "value": "boolean"
+        },
+        "ACd": {
+            "caption": "Total",
+            "name": "total",
+            "rank": 1,
+            "value": "number"
+        },
+        "ACe": {
+            "caption": "Subtotal",
+            "name": "subtotal",
+            "rank": 2,
+            "value": "number"
+        },
+        "ACj": {
+            "caption": "customer_id",
+            "name": "customer_id",
+            "rank": 3,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

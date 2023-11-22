@@ -1,0 +1,127 @@
+{
+    "category": "payment",
+    "display": "New payment checkout session",
+    "fields": {
+        "AAk": {
+            "caption": "Success URL",
+            "doc": "ex : https://example.com/success",
+            "editor": "DynamicValue",
+            "name": "success_url",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAl": {
+            "caption": "Cancel URL",
+            "doc": "ex :https://example.com/cancel",
+            "editor": "DynamicValue",
+            "name": "cancel_url",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAo": {
+            "caption": "Prices",
+            "editor": "DynamicValue",
+            "field_list": true,
+            "field_type_restriction": "text_image_file",
+            "is_list": true,
+            "name": "prices",
+            "rank": 3,
+            "value": "number"
+        },
+        "AAp": {
+            "caption": "Quantities",
+            "editor": "DynamicValue",
+            "field_list": true,
+            "field_type_restriction": "number",
+            "is_list": true,
+            "name": "quantities",
+            "rank": 4,
+            "value": "number"
+        },
+        "AAq": {
+            "caption": "Card payment",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "card_payment",
+            "rank": 6
+        },
+        "AAr": {
+            "caption": "SEPA payment",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "sepa_payment",
+            "rank": 7
+        },
+        "AAs": {
+            "caption": "Tax rates",
+            "editor": "DynamicValue",
+            "field_type_restriction": "text_image_file",
+            "is_list": true,
+            "name": "taxRates",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "AAt": {
+            "caption": "Customer Type",
+            "doc": "Add the customer if already known",
+            "editor": "custom_type",
+            "name": "customer_type",
+            "optional": true,
+            "rank": 8,
+            "value": "custom_data_AAJ"
+        },
+        "AAu": {
+            "caption": "Customer ID",
+            "doc": "Customer ID if already known",
+            "editor": "custom_field_AAt",
+            "field_type_restriction": "text_image_file",
+            "name": "customer_id",
+            "optional": true,
+            "rank": 9
+        },
+        "AAv": {
+            "caption": "Customer Email",
+            "doc": "Customer email if customer ID is empty",
+            "editor": "custom_field_AAt",
+            "field_type_restriction": "text_image_file",
+            "name": "customer_email",
+            "optional": true,
+            "rank": 10
+        },
+        "AAw": {
+            "caption": "Customer",
+            "editor": "DynamicValue",
+            "name": "customer",
+            "optional": true,
+            "rank": 11,
+            "value": "custom_data_AAt"
+        },
+        "AAy": {
+            "caption": "Names",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "names",
+            "rank": 2,
+            "value": "text"
+        },
+        "ABP": {
+            "caption": "Mode",
+            "default_val": "payment",
+            "editor": "Dropdown",
+            "name": "mode",
+            "options": "payment,subscription",
+            "rank": 12
+        }
+    },
+    "return_value": {
+        "AAF": {
+            "caption": "Session ID",
+            "name": "session_id",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

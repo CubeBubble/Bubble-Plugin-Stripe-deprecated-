@@ -1,0 +1,9 @@
+{
+    "categories": {
+        "0": "payment"
+    },
+    "description": "Stripe plugin\n\n\nWARNING\n____________\n\nThis plugin is deprecated and will no longer function in 2024.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1616512283339x845723065427729700/stripe_logo.jpeg",
+    "license": "open_source",
+    "name": "Stripe (deprecated)"
+}

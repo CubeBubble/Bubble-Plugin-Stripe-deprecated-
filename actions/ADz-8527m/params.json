@@ -1,0 +1,23 @@
+{
+    "category": "plugins",
+    "display": "Create customer",
+    "fields": {
+        "AEA": {
+            "caption": "email",
+            "editor": "DynamicValue",
+            "name": "email",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AEB": {
+            "caption": "cust_id",
+            "name": "cust_id",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

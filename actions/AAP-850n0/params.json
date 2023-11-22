@@ -1,0 +1,14 @@
+{
+    "category": "payment",
+    "display": "Redirect to checkout",
+    "fields": {
+        "AAQ": {
+            "caption": "Session Id",
+            "editor": "DynamicValue",
+            "name": "session_id",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

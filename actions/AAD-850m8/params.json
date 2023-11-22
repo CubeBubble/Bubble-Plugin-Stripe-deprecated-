@@ -1,0 +1,119 @@
+{
+    "category": "payment",
+    "display": "New payment checkout session with items",
+    "fields": {
+        "AAG": {
+            "caption": "Success URL",
+            "doc": "ex : https://example.com/success",
+            "editor": "DynamicValue",
+            "name": "success_url",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "Cancel URL",
+            "doc": "ex :https://example.com/cancel",
+            "editor": "DynamicValue",
+            "name": "cancel_url",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAJ": {
+            "caption": "Item Type",
+            "editor": "custom_type",
+            "name": "item_type",
+            "optional": true,
+            "rank": 3
+        },
+        "AAK": {
+            "caption": "Items",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "items",
+            "rank": 2,
+            "value": "custom_data_AAJ"
+        },
+        "AAL": {
+            "caption": "Item Stripe price field",
+            "editor": "custom_field_AAJ",
+            "field_type_restriction": "text_image_file",
+            "name": "item_price",
+            "rank": 4
+        },
+        "AAM": {
+            "caption": "Item quantity",
+            "editor": "custom_field_AAJ",
+            "field_type_restriction": "number",
+            "name": "item_qty",
+            "rank": 5
+        },
+        "AAN": {
+            "caption": "Card payment",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "card_payment",
+            "rank": 7
+        },
+        "AAO": {
+            "caption": "SEPA payment",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "sepa_payment",
+            "rank": 8
+        },
+        "AAd": {
+            "caption": "Item tax rate",
+            "editor": "custom_field_AAJ",
+            "field_type_restriction": "text_image_file",
+            "name": "item_tax_rate",
+            "optional": true,
+            "rank": 6
+        },
+        "AAe": {
+            "caption": "Customer Type",
+            "doc": "Add the customer if already known",
+            "editor": "custom_type",
+            "name": "customer_type",
+            "optional": true,
+            "rank": 9,
+            "value": "custom_data_AAJ"
+        },
+        "AAf": {
+            "caption": "Customer ID",
+            "doc": "Stripe Customer ID  ",
+            "editor": "custom_field_AAe",
+            "field_type_restriction": "text_image_file",
+            "name": "customer_id",
+            "optional": true,
+            "rank": 10,
+            "value": "text"
+        },
+        "AAg": {
+            "caption": "Customer Email",
+            "doc": "Customer email if customer ID is empty",
+            "editor": "custom_field_AAe",
+            "field_type_restriction": "text_image_file",
+            "name": "customer_email",
+            "optional": true,
+            "rank": 11
+        },
+        "AAh": {
+            "caption": "Customer",
+            "editor": "DynamicValue",
+            "name": "customer",
+            "optional": true,
+            "rank": 12,
+            "value": "custom_data_AAe"
+        }
+    },
+    "return_value": {
+        "AAF": {
+            "caption": "Session ID",
+            "name": "session_id",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}
